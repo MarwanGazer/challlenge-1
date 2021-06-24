@@ -1,0 +1,249 @@
+* {
+    padding: 0;
+    margin: 0;
+    text-transform: capitalize;
+    font-size: 30px;
+    font-family: 'Open Sans', sans-serif;
+    ;
+}
+
+:root {
+    --padding: 50px;
+    --color1:#fff;
+    --color2:#eee;
+}
+
+section {
+    margin: 0 auto;
+}
+
+nav {
+    background-color: var(--color1);
+    display: flex;
+    align-items: center;
+}
+
+.logo {
+    font-size: 40px;
+    font-weight: bold;
+    font-style: italic;
+    flex: 1;
+    cursor: pointer;
+    padding: 15px;
+    padding-right: var(--padding);
+    margin-left: 10%;
+}
+
+ul {
+    flex: 2;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+li {
+    font-size: 20px;
+    list-style: none;
+}
+
+li:hover {
+    color: #3D66C2;
+    cursor: pointer;
+}
+
+.head {
+    text-align: center;
+    background-color: var(--color2);
+    padding: 30px 60px 50px 60px;
+    padding-right: var(--padding);
+}
+
+.head h1 {
+    font-size: 50px;
+    margin: 20px auto;
+}
+
+.head h1 span {
+    color: #1ecbe1;
+    font-size: inherit;
+}
+
+.article-1 img {
+    height: 200px;
+    width: 200px;
+    margin: 20px auto;
+}
+
+.article-1 {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    background-color: var(--color1);
+    padding: var(--padding);
+    height: 270px;
+}
+
+.article-1 article p {
+    font-size: 25px;
+    margin-top: 20px;
+}
+
+.price,
+.quality,
+.performance {
+    width: calc((100% - 100px)/3);
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+
+.about-us {
+    display: flex;
+    background-color: var(--color2);
+    padding:var(--padding);
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.about-us img {
+    width: 50%;
+    position: relative;
+}
+
+.about-us div {
+    width: 40%;
+    text-align: center;
+    align-self: flex-start;
+}
+
+.about-us div h2 {
+    font-size: 40px;
+}
+
+.feedback {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    background-color: var(--color1);
+    padding: 50px;
+}
+
+.feedback span {
+    font-size: 70px;
+}
+
+.feedback div {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+    width: calc((100% - 100px)/3);
+    color: #fff;
+    padding-bottom: 20px;
+}
+
+.services {
+    background-color: #b33939;
+}
+
+.design {
+    background-color: #227093;
+}
+
+.clients {
+    background-color: #218c74;
+}
+
+.skills h2 {
+    font-size: 40px;
+    position: relative;
+    align-self: center;
+    top: -20px;
+}
+
+.skills {
+    background-color: var(--color2);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: flex-start;
+    padding: var(--padding);
+}
+
+.skills div {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    justify-content: space-evenly;
+    margin: 20px;
+    position: relative;
+    left: 16%;
+}
+
+.skills div span {
+    margin: 20px 0;
+    position: relative;
+}
+
+.skills div span::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    width: 700px;
+    height: 100%;
+    background-color: var(--color1);
+    left: calc(100% + 10px)
+}
+
+.skills div span::after {
+    position: absolute;
+    background-color: #03a9f4;
+    left: calc(100% + 10px);
+    height: 100%;
+    top: 0;
+    color: #fff;
+    text-align: end;
+    font-size: 20px;
+    line-height: 41px;
+    padding-right: 10px;
+}
+
+.html::after {
+    content: "60%";
+    width: 410px;
+}
+
+.css::after {
+    content: "70%";
+    width: 480px;
+}
+
+.java-script::after {
+    content: "80%";
+    width: 550px;
+}
+
+.php::after {
+    content: "65%";
+    width: 445px;
+}
+
+.python::after {
+    content: "90%";
+    width: 620px;
+}
+footer{
+    background-color: #333333;
+    display: flex;
+    color: #fff;
+    align-items: center;
+    justify-content: space-between;
+    padding: 15px;
+}
+footer span{
+    color: #03a9f4;
+    font-weight: bold;
+    font-style: italic;
+}
